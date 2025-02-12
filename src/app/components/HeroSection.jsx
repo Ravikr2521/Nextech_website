@@ -29,6 +29,32 @@ const HeroSection = () => {
               Impactful Solutions.
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 animate-slidein opacity-0 [--slidein-delay:800ms]">
+              <button className="group relative w-full sm:w-auto px-6 py-3 min-w-[160px]">
+                <div className="absolute inset-0 bg-gradient-to-r from-violet-600 to-cyan-600 rounded-lg"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-violet-600 to-cyan-600 rounded-lg lg:blur-md blur-0 group-hover:opacity-60 transition-opacity duration-500"></div>
+                <div className="relative flex items-center justify-center gap-2">
+                  <span className="text-white font-medium">Get Started</span>
+                  <svg
+                    className="w-5 h-5 text-white transform group-hover:translate-x-1 transition-transform"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
+                </div>
+              </button>
+
+              <button className="w-full sm:w-auto px-6 py-3 rounded-lg border border-white/10 bg-white/5 backdrop-blur-lg text-white/70 hover:bg-white/10 hover:text-white transition-all min-w-[160px]">
+                Documentation
+              </button>
+            </div>
+            {/* <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 animate-slidein opacity-0 [--slidein-delay:800ms]">
               <a
                 href="#"
                 className="bg-white text-blue-900 font-semibold px-8 py-2 rounded-full hover:bg-blue-100 transition duration-300 text-center"
@@ -41,7 +67,7 @@ const HeroSection = () => {
               >
                 Learn More
               </a>
-            </div>
+            </div> */}
           </div>
 
           <div className="w-full md:w-2/5 md:pl-12 ">

@@ -69,7 +69,7 @@ const Team = () => {
             </div>
             <img
               src="img/leadsNexTech-logo-transparent.png"
-              className="h-11 absolute left-2 top-0 object-contain opacity-80"
+              className="h-11 absolute  left-2 top-0 object-contain opacity-80"
             />
 
             <a

@@ -1,6 +1,8 @@
 import "./globals.css";
-import Navbar from "./Common/Navbar";
+
 import Footer from "./Common/Footer";
+import Script from "next/script";
+import AOSInit from "./components/AOSInit";
 
 export const metadata = {
   title: "Created by Ravi",
@@ -10,6 +12,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      </head>
       <body className={`antialiased`}>
         {/* <Navbar /> */}
         <main className="flex flex-col min-h-[calc(100vh)]">
@@ -17,6 +22,11 @@ export default function RootLayout({ children }) {
           <Footer />
         </main>
       </body>
+      <Script
+        src="https://unpkg.com/aos@next/dist/aos.js"
+        strategy="afterInteractive"
+      />
+      <AOSInit />
     </html>
   );
 }

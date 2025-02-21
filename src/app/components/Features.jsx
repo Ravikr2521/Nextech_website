@@ -1,90 +1,109 @@
 import React from "react";
-import CustomHeading from "./CustomComponents/CustomHeading";
 
 const Features = () => {
-  const features = [
-    {
-      image: "img/spaceTech.jpg",
-      title: "Develop SpaceTech & AI driven NextGen products",
-      description:
-        "Climate Smart Agriculture, Disaster Risk Management, Weather Analytics, Landscape, Biodiversity & Forest Ecology, Carbon Footprint & Sequestration, Agri Value Chain Analytics",
-    },
-    {
-      image: "img/geospacialLocation.jpg",
-      title: "Provide Geospatial, Location Intelligence & Analytical Services.",
-      description:
-        "Unlock the power of geospatial data with our cutting-edge location intelligence and analytical services. Make informed decisions based on accurate spatial insights.",
-    },
-    {
-      image: "img/IntelligentCognitiveSystems.jpg",
-      title:
-        "Develop Cognitive AI Solutions for Digital Commerce, Fintech and Social Networks.",
-      description:
-        "Harness the potential of intelligent cognitive systems to streamline your business operations. Leverage the latest advancements in AI and machine learning.",
-    },
-    {
-      image: "img/IoTSensorNetworks.jpg",
-      title:
-        "Develop Core Advanced Analytical Products on IoT , Drone-SAT & Sensor Networks.",
-      description:
-        "Gain actionable insights from your IoT devices and sensor networks. Our core analytical products provide valuable data-driven solutions for optimizing performance.",
-    },
-  ];
   return (
-    // <div className="flex flex-col justify-center items-center lg:pt-0 pt-10 mb-10 relative lg:px-12 md:px-12 px-6">
-    //   <CustomHeading title="What We Do" />
-    //   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-6 md:gap-6 gap-10 mt-8">
-    //     {features.map((item, index) => {
-    //       return (
-    //         <div
-    //           className="border border-gray-200 dark:border-gray-600 shadow-lg hover:shadow-xl transition-all rounded-lg  flex flex-col items-center justify-between transform hover:scale-105 duration-300"
-    //           key={index}
-    //         >
-    //           <img
-    //             src={item.image}
-    //             alt={item.title}
-    //             className="w-full h-44 object-cover rounded-t-lg  border-gray-300 dark:border-gray-800 brightness-75 dark:brightness-95"
-    //           />
-    //           <div className="bg-white dark:bg-black h-auto py-4 text-center flex flex-col justify-between p-4 rounded-md">
-    //             <h3 className="text-lg font-semibold text-blue-900 dark:text-gray-100 mb-4">
-    //               {item.title}
-    //             </h3>
-    //             <p className="text-gray-600 dark:text-gray-500 italic text-md">
-    //               {item.description}
-    //             </p>
-    //           </div>
-    //         </div>
-    //       );
-    //     })}
-    //   </div>
-    // </div>
-    <div className="flex flex-col justify-center items-center lg:pt-0 pt-10 mb-10 relative lg:px-12 md:px-12 px-6">
-      <CustomHeading title="What We Do" />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-6 md:gap-6 gap-10 mt-8">
-        {features.map((item, index) => {
-          return (
-            <div
-              className="border select-none border-gray-200 relative dark:border-gray-600 shadow-lg hover:shadow-xl transition-all rounded-lg  flex flex-col items-center justify-between transform hover:scale-105 duration-300"
-              key={index}
-            >
+    <section className="max-w-7xl mx-auto px-6  py-12 ">
+      <div
+        className=" inset-0 bg-cover bg-center "
+        style={{
+          backgroundImage: "url('/img/bg_img.jpg')",
+        }}
+      ></div>
+      <div className="md:w-2/3 lg:w-1/2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          className="w-7 h-7 text-red-400"
+        >
+          <path
+            fillRule="evenodd"
+            d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5z"
+            clipRule="evenodd"
+          />
+        </svg>
+
+        <h2 className="my-6 text-2xl font-bold text-gray-700 dark:text-white md:text-4xl">
+          A technology-first approach to payments and finance
+        </h2>
+        <p className="text-gray-600 dark:text-gray-300">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ad
+          ipsum pariatur autem, fugit laborum in atque amet obcaecati? Nisi
+          minima aspernatur, quidem nulla cupiditate nam consequatur eligendi
+          magni adipisci.
+        </p>
+      </div>
+
+      <div className="mt-16 grid divide-x divide-y divide-gray-100 dark:divide-gray-700 overflow-hidden rounded-3xl border border-gray-100 text-gray-600 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4">
+        {[
+          {
+            title: "First Feature",
+            description:
+              "Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.",
+            imgSrc: "https://cdn-icons-png.flaticon.com/512/4341/4341139.png",
+          },
+          {
+            title: "Second Feature",
+            description:
+              "Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.",
+            imgSrc: "https://cdn-icons-png.flaticon.com/512/4341/4341134.png",
+          },
+          {
+            title: "Third Feature",
+            description:
+              "Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.",
+            imgSrc: "https://cdn-icons-png.flaticon.com/512/4341/4341160.png",
+          },
+          {
+            title: "More Features",
+            description:
+              "Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.",
+            imgSrc: "https://cdn-icons-png.flaticon.com/512/4341/4341025.png",
+          },
+        ].map((feature, index) => (
+          <div
+            key={index}
+            className="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10"
+          >
+            <div className="relative space-y-8 py-12 p-8">
               <img
-                src={item.image}
-                alt={item.title}
-                className="w-full min-h-[460px] object-cover rounded-lg  border-gray-300 dark:border-gray-800 brightness-75 dark:brightness-95"
+                src={feature.imgSrc}
+                className="w-12"
+                width="512"
+                height="512"
+                alt={feature.title}
               />
-              <div className="bg-white dark:bg-black h-auto  py-4 text-center flex flex-col  justify-between p-4  rounded-b-lg info_card">
-                <h3 className="text-xl font-semibold  dark:text-gray-100 text-white">
-                  {item.title}
-                </h3>
-                <p className="text-whie mt-2 dark:text-gray-500 italic text-md text-[#cacaca]">
-                  {item.description}
+              <div className="space-y-2">
+                <h5 className="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+                  {feature.title}
+                </h5>
+                <p className="text-gray-600 dark:text-gray-300">
+                  {feature.description}
                 </p>
               </div>
+              <a
+                href="#"
+                className="flex items-center justify-between group-hover:text-secondary"
+              >
+                <span className="text-sm">Read more</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition-all  duration-300 group-hover:translate-x-0 group-hover:opacity-100"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </a>
             </div>
-          );
-        })}
+          </div>
+        ))}
       </div>
-    </div>
+    </section>
   );
 };
 

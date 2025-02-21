@@ -1,8 +1,9 @@
 import React from "react";
+import TypeWriterText from "./CustomComponents/TypeWriterText";
 
 const HeroSection = () => {
   return (
-    <section className="relative  text-white overflow-hidden animate-fadein ">
+    <section className="relative  text-white  animate-fadein ">
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div
         className="absolute inset-0 bg-cover bg-center "
@@ -25,8 +26,12 @@ const HeroSection = () => {
             </h1>
 
             <p className="text-xl mb-5 text-gray-300 animate-slidein opacity-0 [--slidein-delay:700ms]">
-              Harnessing Research for developing Sustainable, Scalable, &
-              Impactful Solutions.
+              <TypeWriterText
+                text={
+                  "Harnessing Research for developing Sustainable, Scalable, & Impactful Solutions."
+                }
+                speed={50}
+              />
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 animate-slidein opacity-0 [--slidein-delay:800ms]">
               <button className="group relative w-full sm:w-auto px-6 py-3 min-w-[160px]">
@@ -135,8 +140,8 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0">
-        <svg
+      <div className="absolute -bottom-2 left-0 right-0">
+        {/* <svg
           viewBox="0 0 1440 120"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -144,6 +149,17 @@ const HeroSection = () => {
           <path
             d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z"
             fill="white"
+          />
+        </svg> */}
+        <svg
+          viewBox="0 0 1440 200"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          stroke="none"
+        >
+          <path
+            d="M0 160 Q 180 100, 360 140 T 720 140 T 1080 120 T 1440 160 V 200 H 0 Z"
+            fill="#F8FAFC"
           />
         </svg>
       </div>

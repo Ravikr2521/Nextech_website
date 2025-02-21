@@ -4,9 +4,11 @@ import { FaLocationDot } from "react-icons/fa6";
 const Footer = () => {
   return (
     <>
-      <footer className="bg-white dark:bg-gray-800">
-        <div className="max-w-screen-xl p-4 py-6 mx-auto lg:py-10 md:p-8 lg:p-6">
-          <hr className="my-4 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-1" />
+      <footer className=" dark:bg-gray-800">
+        <div className="max-w-screen-xl  mx-auto relative ">
+          <hr className=" border-gray-300 sm:mx-auto dark:border-gray-700 w-full  px-10 absolute top-0  " />
+        </div>
+        <div className="max-w-screen-xl p-4 py-6 mx-auto lg:py-6   md:p-8 lg:p-6">
           <div className="text-center">
             <a
               href="#"

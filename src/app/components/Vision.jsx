@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Vision = () => {
   return (
-    <MaxWidthWrapper className="flex flex-col justify-center items-center lg:pt-5 pt-10 lg:mb-20 relative">
+    <MaxWidthWrapper className="flex flex-col my-6 justify-center items-center lg:pt-5 pt-10 lg:mb-20 relative">
       <CustomHeading title="Our Vision" />
       <div className="relative isolate px-6 pt-1 lg:px-8">
         <div
@@ -16,9 +16,13 @@ const Vision = () => {
         </div>
 
         <div className="mx-auto max-w-2xl py-6 sm:py-10 lg:py-10 ">
-          <div className="flex w-full justify-center lg:absolute lg:top-3 lg:-right-96 top-10  -right-3">
+          <div
+            className="flex w-full justify-center lg:absolute lg:top-3 lg:-right-96 top-10  -right-3 "
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
             <img
-              src="https://www.leadsnextech.com/images/earthTech.jpg"
+              src="/img/earthTech-Photo.png"
               className="m-0 w-1/3 md:w-1/5 brightness-100 mix-blend-multiply rotate-[23deg]   dark:mix-blend-normal dark:rounded-full"
             />
           </div>

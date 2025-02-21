@@ -35,10 +35,10 @@ const Team = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center py-14 mb-10 relative lg:px-12 md:px-12 px-6">
+    <div className="flex flex-col justify-center items-center py-14 mb-10 relative lg:px-16 md:px-12 px-6">
       <CustomHeading title="Our Team" />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-9">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-10">
         {teams.map((member, index) => (
           <div
             key={index}

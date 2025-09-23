@@ -7,6 +7,10 @@ import Features from "./components/Features";
 import EarthTechMission from "./components/EarthTechMission";
 import Slider from "./components/Slider";
 
+import TechStack from "./components/Test";
+import Approach from "./components/Approach";
+import OurSolutions from "./components/Test";
+
 export default function Home() {
   return (
     <div className="bg-slate-50">
@@ -14,6 +18,8 @@ export default function Home() {
       <Vision />
       {/* <Slider />/ */}
       <WhatWeDo />
+      {/* <TechStack /> */}
+      {/* <Approach /> */}
 
       <Features />
 

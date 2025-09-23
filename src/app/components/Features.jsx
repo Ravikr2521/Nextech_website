@@ -2,13 +2,14 @@ import React from "react";
 
 const Features = () => {
   return (
-    <section className="max-w-7xl mx-auto px-6  py-12 ">
-      <div
-        className=" inset-0 bg-cover bg-center "
-        style={{
-          backgroundImage: "url('/img/bg_img.jpg')",
-        }}
-      ></div>
+    <section
+      className="max-w-7xl mx-auto px-6  py-12 relative"
+      //   style={{
+      //     // backgroundImage: "url('/img/bg_img.jpg')",npm
+      //     backgroundSize: "cover",
+      //     mixBlendMode: "multiply",
+      //   }}
+    >
       <div className="md:w-2/3 lg:w-1/2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +35,7 @@ const Features = () => {
         </p>
       </div>
 
-      <div className="mt-16 grid divide-x divide-y divide-gray-100 dark:divide-gray-700 overflow-hidden rounded-3xl border border-gray-100 text-gray-600 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4">
+      <div className="mt-16 grid  divide-x divide-y divide-gray-100 dark:divide-gray-700 overflow-hidden rounded-3xl border border-gray-100 text-gray-600 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4">
         {[
           {
             title: "First Feature",
@@ -63,9 +64,9 @@ const Features = () => {
         ].map((feature, index) => (
           <div
             key={index}
-            className="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10"
+            className="group bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10"
           >
-            <div className="relative space-y-8 py-12 p-8">
+            <div className="relative space-y-8 py-12 p-8 ">
               <img
                 src={feature.imgSrc}
                 className="w-12"

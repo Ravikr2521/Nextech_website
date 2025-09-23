@@ -68,7 +68,7 @@ const WhatWeDo = () => {
         {features.map((item, index) => {
           return (
             <div
-              className="border select-none border-gray-200 relative dark:border-gray-600 shadow-lg hover:shadow-xl transition-all rounded-lg  flex flex-col items-center justify-between transform hover:scale-105 duration-300"
+              className="border select-none  border-gray-200 relative dark:border-gray-600 shadow-lg hover:shadow-xl transition-all rounded-lg  flex flex-col items-center justify-between transform hover:scale-105 duration-300"
               key={index}
             >
               <img

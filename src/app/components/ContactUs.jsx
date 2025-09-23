@@ -17,7 +17,11 @@ const ContactUs = () => {
 
       <div className="lg:w-2/3 md:w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 ">
-          <div className="border border-gray-200 shadow-lg rounded-lg p-6 flex flex-col items-center hover:shadow-xl transition bg-white">
+          <div
+            className="border border-gray-200 shadow-lg rounded-lg p-6 flex flex-col items-center hover:shadow-xl transition bg-white"
+            data-aos="flip-right"
+            data-aos-duration="1500"
+          >
             <FaEnvelope className="text-blue-600 text-2xl mb-4" />
             <h3 className="text-lg font-semibold text-blue-900">Contact Us</h3>
             <p className="text-gray-500 text-sm text-center mt-2">
@@ -35,7 +39,11 @@ const ContactUs = () => {
             </button>
           </div>
 
-          <div className="border border-gray-200 shadow-lg rounded-lg p-6 flex flex-col items-center hover:shadow-xl transition bg-white">
+          <div
+            className="border border-gray-200 shadow-lg rounded-lg p-6 flex flex-col items-center hover:shadow-xl transition bg-white"
+            data-aos="flip-left"
+            data-aos-duration="1500"
+          >
             <FaPhoneAlt className="text-blue-600 text-2xl mb-4" />
             <h3 className="text-lg font-semibold text-blue-900">
               Customer Service

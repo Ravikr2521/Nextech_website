@@ -5,20 +5,20 @@ import Link from "next/link";
 
 const Vision = () => {
   return (
-    <MaxWidthWrapper className="flex flex-col my-6 justify-center items-center lg:pt-5 pt-10 lg:mb-20 relative">
+    <MaxWidthWrapper className="flex flex-col my-6 justify-center items-center lg:pt-5 pt-10 lg:mb-20 relative ">
       <CustomHeading title="Our Vision" />
-      <div className="relative isolate px-6 pt-1 lg:px-8">
+      <div className="relative isolate px-6 pt-1 lg:px-8 ">
         <div
           className="absolute inset-x-0 top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
         >
-          <div className="relative left-[calc(50%-11rem)] aspect-[1155/628] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[60.1875rem]"></div>
+          <div className=" left-[calc(50%-11rem)] aspect-[1155/628] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[60.1875rem]"></div>
         </div>
 
         <div className="mx-auto max-w-2xl py-6 sm:py-10 lg:py-10 ">
           <div
             className="flex w-full justify-center lg:absolute lg:top-3 lg:-right-96 top-10  -right-3 "
-            data-aos="fade-left"
+            data-aos="fade-up"
             data-aos-duration="1500"
           >
             <img

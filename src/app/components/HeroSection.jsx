@@ -3,7 +3,7 @@ import TypeWriterText from "./CustomComponents/TypeWriterText";
 
 const HeroSection = () => {
   return (
-    <section className="relative  text-white  animate-fadein ">
+    <section className="relative  text-white  animate-fadein overflow-hidden">
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div
         className="absolute inset-0 bg-cover bg-center "
@@ -75,7 +75,11 @@ const HeroSection = () => {
             </div> */}
           </div>
 
-          <div className="w-full md:w-2/5 md:pl-12 ">
+          <div
+            className="w-full md:w-2/5 md:pl-12 "
+            data-aos="fade-up-left"
+            data-aos-duration="1500"
+          >
             <div className="bg-white bg-opacity-10 backdrop-filter md:backdrop-blur-lg relative  rounded-xl p-8 shadow-2xl">
               <h2 className="text-2xl font-semibold mb-6">Why Choose Us?</h2>
               <img
@@ -140,7 +144,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="absolute -bottom-2 left-0 right-0">
+      <div className="absolute  lg:-bottom-3 md:-bottom-3 -bottom-9 left-0 right-0">
         {/* <svg
           viewBox="0 0 1440 120"
           fill="none"

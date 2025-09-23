@@ -2,9 +2,13 @@ import React from "react";
 
 const EarthTechMission = () => {
   return (
-    <div className="max-w-7xl mx-auto px-6 md:px-12 py-10">
+    <div className="max-w-7xl mx-auto px-6 md:px-12 py-10 overflow-hidden">
       <div className="flex flex-col-reverse items-center justify-between text-gray-600 md:flex-row md:gap-6 lg:gap-12 lg:items-center">
-        <div className="md:w-7/12 lg:w-1/2">
+        <div
+          className="md:w-7/12 lg:w-1/2"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
           <h2 className="text-3xl font-bold text-gray-900 md:text-4xl dark:text-white">
             Empowering a Sustainable Future with Human-Centric EarthTech
             Solutions
@@ -74,7 +78,11 @@ const EarthTechMission = () => {
           </div>
         </div>
 
-        <div className="md:w-5/12 lg:w-1/2">
+        <div
+          className="md:w-5/12 lg:w-1/2"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+        >
           <img
             src="/img/pie.svg"
             alt="EarthTech Analytics"
